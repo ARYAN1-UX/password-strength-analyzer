@@ -20,6 +20,12 @@
 				<input type="password" id="password" placeholder="Type a password to begin" autocomplete="off">
 				<button class="toggle-button" id="togglePassword" type="button">Show</button>
 			</div>
+			<div class="password-actions">
+				<button class="action-button primary-action" id="generatePassword" type="button">Generate password</button>
+				<button class="action-button" id="suggestPassword" type="button">Suggest password</button>
+	
+			</div>
+			<p class="action-status" id="actionStatus" aria-live="polite"></p>
 			<p class="privacy-note">Your password stays in this browser.</p>
 			<div class="meter-row">
 				<div class="meter" aria-hidden="true"><span id="strengthBar"></span></div>

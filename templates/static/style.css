@@ -15,6 +15,12 @@ input { background: #fff; border: 1px solid #bacac0; border-radius: 5px; color: 
 input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--mint); outline: none; }
 .toggle-button { background: var(--ink); border: 0; border-radius: 5px; color: white; cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; padding: 0 18px; }
 .toggle-button:hover { background: var(--accent); }
+.password-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.action-button { background: transparent; border: 1px solid #bacac0; border-radius: 5px; color: var(--ink); cursor: pointer; font: inherit; font-size: 13px; font-weight: 700; padding: 11px 15px; }
+.action-button:hover { border-color: var(--accent); color: var(--accent); }
+.primary-action { background: var(--accent); border-color: var(--accent); color: white; }
+.primary-action:hover { background: var(--ink); border-color: var(--ink); color: white; }
+.action-status { color: var(--accent); font-size: 12px; min-height: 18px; margin: 10px 0 -1px; }
 .privacy-note { color: var(--muted); font-size: 12px; margin: 9px 0 30px; }
 .meter-row { align-items: center; display: flex; gap: 14px; }
 .meter { background: #e8ece8; border-radius: 10px; flex: 1; height: 10px; overflow: hidden; }
