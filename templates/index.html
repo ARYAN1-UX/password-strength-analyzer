@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Password Strength Analyzer</title>
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 	<main class="container">
@@ -23,7 +23,6 @@
 			<div class="password-actions">
 				<button class="action-button primary-action" id="generatePassword" type="button">Generate password</button>
 				<button class="action-button" id="suggestPassword" type="button">Suggest password</button>
-	
 			</div>
 			<p class="action-status" id="actionStatus" aria-live="polite"></p>
 			<p class="privacy-note">Your password stays in this browser.</p>
@@ -41,6 +40,6 @@
 			</div>
 		</section>
 	</main>
-	<script src="{{ url_for('static', filename='script.js') }}"></script>
+	<script src="static/script.js"></script>
 </body>
 </html>
