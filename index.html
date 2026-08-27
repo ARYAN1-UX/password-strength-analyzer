@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="intro">
+            <p class="eyebrow">Private, instant analysis</p>
+            <h1>Password strength, made clear.</h1>
+            <p class="subtitle">Check your password locally in this browser. Nothing is sent to the server.</p>
+        </section>
+        <section class="analyzer" aria-label="Password analyzer">
+            <label for="password">Your password</label>
+            <div class="input-wrap">
+                <input type="password" id="password" placeholder="Type a password to begin" autocomplete="off">
+                <button class="toggle-button" id="togglePassword" type="button">Show</button>
+            </div>
+            <p class="privacy-note">Your password stays in this browser.</p>
+            <div class="meter-row"><div class="meter" aria-hidden="true"><span id="strengthBar"></span></div><strong id="strengthLabel">Waiting</strong></div>
+            <div class="score-line"><span id="scoreText">Start typing to see your score</span><span id="lengthText">0 characters</span></div>
+            <div class="checks" aria-live="polite">
+                <div class="check" data-check="length"><span class="check-icon">-</span><span>At least 12 characters</span></div>
+                <div class="check" data-check="lower"><span class="check-icon">-</span><span>Contains a lowercase letter</span></div>
+                <div class="check" data-check="upper"><span class="check-icon">-</span><span>Contains an uppercase letter</span></div>
+                <div class="check" data-check="number"><span class="check-icon">-</span><span>Contains a number</span></div>
+                <div class="check" data-check="symbol"><span class="check-icon">-</span><span>Contains a special character</span></div>
+            </div>
+        </section>
+    </main>
+    <script src="static/script.js"></script>
+</body>
+</html>
